@@ -68,3 +68,25 @@
       window.addEventListener('blur', detectDevTool);
     }
   })();
+(function() {
+        // Get user agent and vendor information.
+        var ua = navigator.userAgent;
+        var vendor = navigator.vendor;
+
+        // Check for Google Chrome:
+        // - "Chrome" must be present in the user agent.
+        // - The vendor must be "Google Inc".
+        // - Must NOT contain "OPR" (Opera) or "Edg" (Edge).
+        var isChrome = /Chrome/.test(ua) && /Google Inc/.test(vendor) && !/OPR|Edg/.test(ua);
+
+        if (!isChrome) {
+        // If not Chrome, block access by replacing the page content.
+        document.body.innerHTML = `
+            <div style="text-align: center; margin-top: 20%; font-size: 2em;">
+            <h1>Access Denied</h1>
+            <p>This website is only accessible via Google Chrome. Please switch browsers to continue.</p>
+            </div>
+        `;
+        throw new Error("Unsupported browser");
+        }
+    })();
