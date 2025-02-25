@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags for encoding and responsiveness -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Creative Bootstrap 5.3 Showcase</title>
+    <!-- Bootstrap 5.3 CSS from CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header using only Bootstrap utility classes -->
+    <header class="bg-primary bg-gradient text-white py-5 text-center">
+      <div class="container">
+        <h1 class="display-3">Creative Bootstrap 5.3 Showcase</h1>
+        <p class="lead">
+          Explore containers, grids, tables, images, alerts, and more with a
+          creative twist!
+        </p>
+      </div>
+    </header>
+
+    <div class="container my-5">
+      <!-- Section 1: Containers & Fluid Containers -->
+      <section class="mb-5">
+        <h2 class="mb-3">1. Containers &amp; Fluid Containers</h2>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <div class="p-4 border rounded">
+              <h4>Standard Container</h4>
+              <p>
+                This is a fixed-width container using <code>.container</code>.
+              </p>
+              <p>Content goes here.</p>
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <div class="p-4 border rounded">
+              <h4>Fluid Container</h4>
+              <p>
+                This container spans the full width using
+                <code>.container-fluid</code>.
+              </p>
+              <div class="container-fluid border p-3">
+                <p>Content goes here.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 2: Grid System & Grid Classes -->
+      <section class="mb-5">
+        <h2 class="mb-3">2. Grid System &amp; Grid Classes</h2>
+        <p class="mb-3">
+          Arrange your content with Bootstrap’s responsive grid system. Resize
+          your browser to see it adjust!
+        </p>
+        <div class="row g-3">
+          <div class="col-sm-4">
+            <div class="p-3 bg-light text-center border rounded">col-sm-4</div>
+          </div>
+          <div class="col-sm-4">
+            <div
+              class="p-3 bg-secondary text-white text-center border rounded"
+            >
+              col-sm-4
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="p-3 bg-light text-center border rounded">col-sm-4</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 3: Display Headings -->
+      <section class="mb-5">
+        <h2 class="mb-3">3. Display Headings</h2>
+        <h1 class="display-1">Display 1</h1>
+        <h2 class="display-2">Display 2</h2>
+        <h3 class="display-3">Display 3</h3>
+        <h4 class="display-4">Display 4</h4>
+      </section>
+
+      <!-- Section 4: Bootstrap Table -->
+      <section class="mb-5">
+        <h2 class="mb-3">4. Bootstrap Table</h2>
+        <div class="table-responsive">
+          <table class="table table-striped table-hover">
+            <thead class="table-dark">
+              <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Skill</th>
+                <th>Experience</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Alice</td>
+                <td>Design</td>
+                <td>5 Years</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Bob</td>
+                <td>Development</td>
+                <td>7 Years</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Charlie</td>
+                <td>Marketing</td>
+                <td>3 Years</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Diana</td>
+                <td>Management</td>
+                <td>10 Years</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Section 5: Mark & Abbr -->
+      <section class="mb-5">
+        <h2 class="mb-3">5. Mark &amp; Abbr</h2>
+        <p>
+          Use the <code>mark</code> tag to highlight text and the
+          <code>abbr</code> tag to provide extra details.
+        </p>
+        <p>
+          Here’s a <mark>highlighted text</mark> and an abbreviation for
+          <abbr title="HyperText Markup Language">HTML</abbr>.
+        </p>
+      </section>
+
+      <!-- Section 6: Blockquote -->
+      <section class="mb-5">
+        <h2 class="mb-3">6. Blockquote</h2>
+        <blockquote class="blockquote text-center">
+          <p class="mb-0">"Creativity is intelligence having fun."</p>
+          <footer class="blockquote-footer">Albert Einstein</footer>
+        </blockquote>
+      </section>
+
+      <!-- Section 7: Keyboard Input (kbd) -->
+      <section class="mb-5">
+        <h2 class="mb-3">7. Keyboard Input (kbd)</h2>
+        <p>
+          For keyboard shortcuts, use <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy!
+        </p>
+      </section>
+
+      <!-- Section 8: Background Colors & Contextual Classes -->
+      <section class="mb-5">
+        <h2 class="mb-3">8. Background Colors &amp; Contextual Classes</h2>
+        <div class="p-3 mb-2 bg-primary text-white">.bg-primary</div>
+        <div class="p-3 mb-2 bg-secondary text-white">.bg-secondary</div>
+        <div class="p-3 mb-2 bg-success text-white">.bg-success</div>
+        <div class="p-3 mb-2 bg-danger text-white">.bg-danger</div>
+        <div class="p-3 mb-2 bg-warning text-dark">.bg-warning</div>
+        <div class="p-3 mb-2 bg-info text-dark">.bg-info</div>
+        <div class="p-3 mb-2 bg-light text-dark border">.bg-light</div>
+        <div class="p-3 mb-2 bg-dark text-white">.bg-dark</div>
+      </section>
+
+      <!-- Section 9: Align Image & Rounded Image -->
+      <section class="mb-5">
+        <h2 class="mb-3">9. Align Image &amp; Rounded Image</h2>
+        <div class="mb-3">
+          <img
+            src="OIP.jpg"
+            class="float-start me-3 rounded"
+            alt="Aligned and Rounded"
+          />
+          <p>
+            This image is aligned left using <code>float-start</code> and made
+            rounded with <code>rounded</code>.
+          </p>
+          <div class="clearfix"></div>
+        </div>
+        <div class="mb-3">
+          <img
+            src="OIP.jpg"
+            class="rounded-circle"
+            alt="Rounded Circle"
+          />
+          <p>
+            This image is styled as a circle with the
+            <code>rounded-circle</code> class.
+          </p>
+        </div>
+      </section>
+
+      <!-- Section 10: Alerts -->
+      <section class="mb-5">
+        <h2 class="mb-3">10. Alerts</h2>
+        <div class="alert alert-primary" role="alert">
+          This is a primary alert — check it out!
+        </div>
+        <div
+          class="alert alert-warning alert-dismissible fade show"
+          role="alert"
+        >
+          <strong>Warning!</strong> You can dismiss this alert.
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="alert"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div id="animatedAlert" class="alert alert-success fade" role="alert">
+          This alert will fade in when you click the button.
+        </div>
+        <button id="showAlertBtn" class="btn btn-success mt-3">
+          Show Animated Alert
+        </button>
+      </section>
+    </div>
+
+    <!-- Bootstrap JS Bundle (includes Popper) -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    ></script>
+    <script>
+      // Toggle the animated alert using only Bootstrap classes
+      document
+        .getElementById("showAlertBtn")
+        .addEventListener("click", function () {
+          var alertBox = document.getElementById("animatedAlert");
+          alertBox.classList.toggle("show");
+        });
+    </script>
+  </body>
+</html>
